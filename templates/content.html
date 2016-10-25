@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load cms_tags menu_tags %}
+
+{% block content_header %}
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle collapsed menu_btn" data-toggle="collapse" data-target="#top_menu">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </button>
+                        <a href="/" class="navbar-brand p0">
+                            <span class="navbar-brand__text"><strong>theater</strong></span><span
+                                class="navbar-brand__sup">morgenstern</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row background_color">
+                    <div class="col-md-8 p0">
+                        <div class="collapse navbar-collapse navbar-left p0" id="top_menu">
+                            <ul class="menu">
+                                {% show_menu 0 1 100 100 "menu.html" %}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icons">
+                            <ul class="icons__info">
+                                {% static_placeholder 'icons' %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+{% endblock content_header %}
+
+{% block slider %}
+    <section class="slider">
+        <div class="container-fluid">
+            <div class="row">
+                {% static_placeholder 'slider' %}
+            </div>
+        </div>
+    </section> <!-- END SECTION SLIDER -->
+{% endblock slider %}
+
+{% block content %}
+
+    {% placeholder "content" or %}
+
+    {% endplaceholder %}
+{% endblock content %}
+
+{% block footer %}
+    <section class="footer">
+        <div class="container">
+            {% static_placeholder 'footer' %}
+        </div>
+    </section> <!-- END SECTION FOOTER -->
+{% endblock footer %}

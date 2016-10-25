@@ -1,0 +1,102 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.team_item {
+		margin-bottom: 30px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	.p0 {
+		padding: 0 10px;
+	}
+	.background_color {
+		background-color: #fff;
+	}
+	.header {
+		padding: 0;
+	}
+	.nav {
+		height: 100px;
+		position: relative;
+		
+	}
+	.menu_btn {
+		height: 40px;
+		width: 40px;
+		color: #000;
+	}
+	.menu_btn:hover,
+	.menu_btn:focus {
+		color: #E7007C;
+	}
+	.menu__sub {
+		position: relative;
+		padding-left: 20px;
+	}
+	.menu__sub-empty {
+		display: none;
+		height: 0;
+	}
+	.menu__item {
+		display: block;
+		float: none;
+		text-align: left;
+		/* border-bottom: 1px solid #ccc; */
+	}
+	.menu__link {
+		display: block;
+		font-size: 0.9em;
+	}
+	.menu__link:hover {
+		color: #E7007C;
+	}
+	.menu__link:hover:after {
+		visibility: hidden;
+	}
+	.icons {
+		display: none;
+		height: 0;
+	}
+
+	/* Extra Small Devices, Phones */
+	@media only screen and (max-width : 480px) {
+		.navbar-brand__text {
+			font-size: 1.8em;
+		}
+		.navbar-brand__sup {
+			font-size: 1.8em;	
+		}
+	}
+
+	/* Custom, iPhone Retina */
+	@media only screen and (max-width : 320px) {
+	}
